@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingBogatOmlet">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_recepta">
+        <!-- Checkbox за отмятане на стъпките -->
+        <CheckBox
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Намажете тигана с малко олйо и го загрейте"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смесете в суха купа яйцата, овесените ядки, прясното мляко, солта и пипера"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разбъркайте до получаване на хомогенна смес"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Излейте я в тигана и запечете на бавен огън за 7-8 мин"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Накъсайте отгоре спанак и настъргайте кашкавал, докато не се разтопи"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Свалете от тигана и сгънете омлета на половина"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отстрани сложете пестото"
+            android:padding="10dp"/>
+        <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+        <Button
+            android:id="@+id/checkButton2345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="checkQestion"
+            android:text="Готово"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

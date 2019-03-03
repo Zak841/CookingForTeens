@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingZdravoslovenSladkish">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_recepta">
+        <!-- Checkbox за отмятане на стъпките -->
+        <CheckBox
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Намачкайте банана с вилица"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавете мокрите (яйцата, водата, изварата) и сухите съставки"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разбъркайте и изсипете в застлана с хартия за печене тава"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавете сушените череши"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изпечете на 180-200 градуса за около 30-40 минути"
+            android:padding="10dp"/>
+        <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+        <Button
+            android:id="@+id/checkButton2345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="checkQestion"
+            android:text="Готово"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

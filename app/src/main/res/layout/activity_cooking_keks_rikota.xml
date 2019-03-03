@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingKeksRikota">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/background_recepta">
+            <!-- Checkbox за отмятане на стъпките -->
+            <CheckBox
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В купа смесете и разбийте омекналото масло и пудрата захар"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="След като получите пухкава смес, едно по едно прибавете яйцата"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пресейте брашното и го сложете в купата заедно с какаото"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разбъркайте сместа хубаво до гладка консистенция"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В друга купа сложете рикотата и пудрата захар"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разбъркайте с телена бъркалка"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Прибавете едно яйце и отново разбъркайте"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Използвайте за изпичането на сладкиша продълговата форма за кекс, чието дъно и стени са покрити с хартия за печене"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В подготвената форма за кекс изсипете половината от кафявата смес, а върху нея изсипете сместа с рикота"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сложете по няколко цели черeшки от сладко"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Върху сместа за кекса изсипете останалата половина от кафявата смес"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="С помощта на лъжица или шпатула объркайте двете смеси с плавни движения на няколко места"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Печете кексът с рикота в предварително загрята на 180 градуса фурна за около 50 минути"
+                android:padding="10dp"/>
+            <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+            <Button
+                android:id="@+id/checkButton2345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="checkQestion"
+                android:text="Готово"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

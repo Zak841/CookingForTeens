@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shokoladovo_sushi">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/shokoladovo_sushi"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shokoladovo_sushi"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ориз - 250 г за суши \n
+кокосово мляко - 400 мл\n
+вода - 250 мл\n
+захар - 70 г\n
+оризов оцет - 1 с.л.\n
+киви - 1 - 2 бр.\n
+ягоди - 2 големи шепи\n
+портокалов ликьор - 2 с.л. (Cointreau)\n
+шоколад - 150 г висококачествен, за топене\n
+глюкоза - 50 г\n
+ванилия - 1 ч.л., екстракт\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Измийте ориза под студена вода. Поставете го в тенджера заедно с кокосовото мляко и водата. Оставете да заври на умерена температура, след което намалете температурата на котлона и оставете да къкри за 15 мин при периодично разбъркване.
+Свалете го от огъня и добавете захарта, ванилията и оцета, разбърквайте. Охладете напълно.
+Нарежете плодовете на пръчици и залейте с ликьора. Оставете да се мариноват.
+Върху хартия за печене разчертаайте 4 правоъгълника с размер 30/9 см и четири правоъгълника с размер 30/11 см.
+Разтилете охладения ориз върху по-малките правоъгълници около 0.5 см. В долната му част направете улей, там поставете нарязаните плодове. С помощта на хартията завийте на стегнато руло и оставете в хладилник.
+Стопете шоколада на водна баня с глюкозата. Охладете до стайна температура и намажете върху по-големите правоъгълници на по-плътен слой. Изчакайте да се стегне на стайна температура и да бъде еластичен.
+Върху него поставете рулата от ориз и ги завийте, така че целите да са обгърнати с шоколад. Завийте ги в хартията и ги оставете в хладилник, за да стегнат.
+Нарежете шоколадовото суши с топъл нож."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

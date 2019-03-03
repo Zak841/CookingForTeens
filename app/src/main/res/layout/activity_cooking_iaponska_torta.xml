@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingIaponskaTorta">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/background_recepta">
+            <!-- Checkbox за отмятане на стъпките -->
+            <CheckBox
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Обелете ябълките и почистете от семките"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нарежете на филийки и потопете в купа с вода и лимонов сок"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оставете ги настрани"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разбийте яйцата и захарта до побеляване"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добавете разтопеното масло, млякото, солта, канелата и брашното с бакпулвера през цедка"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разбъркайте с шпатула"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Изцедете ябълките от водата и добавете внимателно, за да не се счупят"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разбъркайте"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="С лъжица първо извадете ябълките и ги положете в кейковата форма"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отгоре залейте с останалата смес"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поръсете обилно с накълцаните бадеми"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Печете на 165-170 градуса за около 40-45 минути или до суха клечка"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В касерола изсипете захарта и оставете да се стопи до светъл карамел на умерен огън към слаб котлон"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Прибавете маслото при непрекъснато разбъркване до пълното му стопяване"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Изсипете сметаната и разбъркайте, като внимавате да не изкипи от горещата и висока температура"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Охладете и залейте тортата"
+                android:padding="10dp"/>
+            <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+            <Button
+                android:id="@+id/checkButton2345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="checkQestion"
+                android:text="Готово"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

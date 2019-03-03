@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ravioli_kartofi">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/ravioli_s_kartofi"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ravioliskartofi"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="за тестото\n
+брашно - 250 г ръжено - пшенично\n
+яйца - 3 бр.\n
+вода - 100 мл\n
+олио - 1 с.л.\n
+за плънката\n
+бекон - 150 г\n
+лук - 2 глави\n
+картофи - 250 г\n
+сирене - 100 г\n
+белтъци - 1 бр.\n
+чесън - 3 скилидки\n
+индийско орехче\n
+майорана\n
+червен пипер\n
+кашкавал - 25 г настърган\n
+масло - 25 г\n
+"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Замесете меко и еластично тесто от изброените продукти за тестото, след което го оставете за 20 минути да почине.
+Междувременно сварете картофите и ги намачкайте.
+
+Нарежете бекона и го изпържете в тиган, добавете ситно нарязаните
+ чесън и лук и пържете още няколко минути. Добавете картофите и настърганото сирене, овкусете със сол и подправките
+и разбъркайте добре.
+
+Разточете готовото тесто на тънка кора и изрежете кръгчета с диаметър около 8 см.
+ Покрийте половината от всяко кръгче с плънка, а тестото около нея с малко белтък. Завийте с другата половина
+и притиснете добре краищата с вилица.
+
+Пуснете равиолите във вряща вода, за да се сварят до готовност - около 7
+ минути. Извадете ги с решетъчна лъжица, намажете с маслото и поръсете с настърган кашкавал. Поднесете със салата по избор."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

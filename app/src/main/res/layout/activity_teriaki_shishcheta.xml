@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teriaki_shishcheta">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/teriaki_shishcheta"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/teriaki_shishcheta"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 ч.ч. соев сос
+1 к.ч. мед
+1 к.ч. оцет оризов
+1 ск. чесън стар
+1 ч.л. джинджифил сух
+1 щипка черен пипер млян
+2 бр. пилешко филе
+1 к.ч. нишесте"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Направете марината от продуктите, отделете част от нея, малко по-малко от половината.
+    2. Накиснете пилето в по-голямата част от марината и оставете за около 40 минути.
+    3. Направете шишчета с месото и сложете в тава за печене. Печете за 20 минути на 200 С.
+    4. Сложете останалата марината на котлона и добавете нишестето. Разбъркайте и оставете на котлона до сгъстяване.
+    5. Сервирайте шишчетата с бял ориз и полейте със соса."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

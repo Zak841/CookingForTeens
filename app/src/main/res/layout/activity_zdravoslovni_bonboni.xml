@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".zdravoslovni_bonboni">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/zdravoslovni_bonboni"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zdravoslovni_bonboni"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="бадеми - 50 г \n
+кашу - 50 г\n
+орехи - 50 г\n
+бразилски орех - 50 г\n
+фурми - 150 гр.\n
+червени боровинки - 50 г сушени\n
+мед - 1 с.л.\n
+сусамов тахан - 1 с.л.\n
+канела\n
+кокосови стърготини - за овалване\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отделете ядките от фурмите с помощта на нож и заедно със сушените боровинки накиснете във вода за 1 час.
+През това време нарежете ядките на много ситно, с помощта на чопър или блендер, заедно с меда и сусамовия тахан.
+След като мине час, отцедете от водата фурмите и боровинките, сложете ги в чопър и включете, постепенно започнете да добавяйте ядките и канела на вкус.
+Ако искате да са по-сладки, добавете още мед (но имайте предвид, че и фурмите придават доста сладост).
+Оформете топчета от получената смес и ги оваляйте в кокосовите стърготини. Оставете бонбоните в хладилника за 2 часа да стегнат."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

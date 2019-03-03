@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingSupasAromatnaIztok">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/background_recepta">
+            <!-- Checkbox за отмятане на стъпките -->
+            <CheckBox
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Измийте и обелете картофите, пащърнака и ябълките"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нарежете ги на кубчета"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Обелете лука- шалота и кромида и ги нарежете - шалота на кубчета, а кромида на пръстени"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Загрейте в тенджера маслото, добавете картофите, пащърнака, ябълките и валота и ги сотирайте"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Налейте бульона, оставете го да заври и намалете температурата като го оставите да ври около 20 мин"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пасирайте до крем"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нарежете наденичката на парченца и ги изпържете в олиото заедно със сметаната, соевия сос, пипера и ригана"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Налейте супата в купички, отгоре сипете парченца наденица"
+                android:padding="10dp"/>
+            <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+            <Button
+                android:id="@+id/checkButton2345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="checkQestion"
+                android:text="Готово"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

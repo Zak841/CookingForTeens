@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ovesena_kasha">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_recepta">
+        <!-- Заглавие -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/ovesena_kasha"
+            android:textColor="#000"
+            android:textSize="25sp" />
+        <!-- Снимка -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ovesena_kasha"/>
+        <!-- Подзаглавие -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Необходими съставки:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            />
+        <!-- Съставките -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" -овесени ядки \n
+- 50 г -белтъци \n
+- 2 бр. -протеин \n
+- 1 доза -кисело мляко \n
+-праскови \n
+-къпини \n"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:padding="10dp"/>
+        <!-- Подзаглавие -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Начин на приготвяне"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"/>
+        <!-- Текста с обесние за приготвяне -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сипваме овесените ядки в тендержа, наливаме вода и слагаме на предварително
+загрят котлон. Когато водата започне да завира, започваме да бъркаме.Когато сместа се сгъсти прибавяме
+белтъците и продължаваме да бъркаме.След това добавяме протеина и отново бъркаме. След като сместа се
+сгъсти достатъчно я махаме от котлона.Правим си топинга като добавяме киселото мляко, прасковите и къпините."
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="СГОТВИ"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:layout_margin="20dp"
+            android:onClick="cookingovesenakasha"/>
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

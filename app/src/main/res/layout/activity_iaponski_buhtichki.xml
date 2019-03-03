@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".iaponski_buhtichki">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/iaponski_buhtichki"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qponski_buhti"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="оризово брашно - 1 ч.ч. \n
+пшенично брашно - 2 ч.ч.\n
+белтъци - 4 бр.\n
+газирана вода - 1/2 ч.ч.\n
+суха мая - 1 ч.л.\n
+йогурт - 1/2 ч.ч\n
+ванилия - 1/4 ч.л. течна\n
+захар - 2 с.л.\n
+За украса\n
+топинг шоколад\n
+захарни пръчици - цветни\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Разбийте белтъците на сняг. В отделна купа смесете двата вида брашно, захарта и сухата мая. Добавете газираната вода, йогурта и ванилията и разбъркайте добре.
+Постепенно към тази смес добавете на порции белтъците, като постоянно разбърквате с лъжица или шпатула.
+Покрийте купата с фолио и оставете настрани за 30 минути.
+Сипете олио в дълбок тиган и загрейте. С лъжица гребнете от сместа и сипете в горещото олио.
+Пържете до златисто и извадете бухтичките върху хартия, за да се отцедят от мазнината.
+След това ги подредете в чиния, залейте ги с топинг и ги поръсете с цветни пръчици."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

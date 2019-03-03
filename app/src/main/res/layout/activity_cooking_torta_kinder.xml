@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingTortaKinder">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/background_recepta">
+            <!-- Checkbox за отмятане на стъпките -->
+            <CheckBox
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Смесете какаото с врялата вода, разбъркайте и оставете да се охлади"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отделете белтъците и ги разбийте на сняг"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Постепенно добавете половината захар - 65 г, и бийте до твърди връхчета"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В отделна купа разбийте жълтъците с останалата захар"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добавете олиото, пресятото с бакпулвера брашно и какаото"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разбъркайте всичко добре"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Към тази смес на няколко пъти добавете разбитите белтъци, като разбърквате внимателно с шпатула"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Изсипете сместа във форма за торта с диаметър 24 см, застлана с хартия"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Печете в предварително загрята на 180 градуса фурна до готовност - около 20 минути"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оставете да се охлади"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="За шоколадовия диск разтопете шоколада на водна баня"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Върху хартия за печене очертайте кръг с диаметър 24 см и разстлейте шоколада"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сложете в хладилника да стегне"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Накиснете листата желатин в студена вода за 10 минути"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Загрейте 2 с.л. сметана, добавете желатина и разбъркайте"
+                android:padding="10dp"/>
+            <CheckBox
+            android:id="@+id/answer16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оставете малко да изстине"
+            android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="За крема разбийте маскарпонето с пудрата захар и ванилията"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отделно разбийте сметаната на пухкав крем, смесете с маскарпонето и при непрекъснато бъркане прибавете желатина"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разрежете блата на две и върху едната част разпределете половината от крема"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Върху него сложете шоколадовия диск, останалия крем и втората част от блата"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="За глазурата на тортата загрейте сметаната, прибавете шоколада и разбъркайте, докато се разтопи"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Залейте тортата и оставете за поне 4 часа"
+                android:padding="10dp"/>
+            <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+            <Button
+                android:id="@+id/checkButton2345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="checkQestion"
+                android:text="Готово"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

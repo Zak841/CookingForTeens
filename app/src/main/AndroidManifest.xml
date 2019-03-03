@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.something.android.cookingforteens">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".HealthyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HomeActivity" />
+        </activity>
+        <activity android:name=".ItalianActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HomeActivity" />
+        </activity>
+        <activity android:name=".AsianActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HomeActivity" />
+        </activity>
+        <activity android:name=".FrenchActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ovesena_kasha"
+            android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" />
+        </activity>
+        <activity
+            android:name=".CookingOvesenaKasha"
+            android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" />
+        </activity>
+        <activity
+            android:name=".kasha_ot_proso"
+            android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" />
+        </activity>
+        <activity
+            android:name=".zdravosloven_sladkish"
+            android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" />
+        </activity>
+        <activity
+            android:name=".nepolitanski_krostini"
+            android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:label="@string/italian_cooking_string"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity
+            android:name=".burzi_brusketi"
+            android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity
+            android:name=".zapecheno_pile_florenski"
+            android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity
+            android:name=".qica_florentinski"
+            android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity
+            android:name=".aziatsko_zele"
+            android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity
+            android:name=".aziastski_diuner"
+            android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity
+            android:name=".teriaki_shishcheta"
+            android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity
+            android:name=".kamember_orehi"
+            android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity
+            android:name=".leko_briule"
+            android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity
+            android:name=".frenski_makaroni"
+            android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".barcheta_mnogozarnesti"
+            android:label="@string/healthy_cooking_string">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".zamrazen_yogurth" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".bogat_omlet" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".solena_torta" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".kantuchini_toskana" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".ravioli_kartofi" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".nepolitanska_supa" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".aziatska_nudul_supa" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".asiansoup_tikva" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".supas_aromat_naiztok" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".avtentichno_pile" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".ratatui" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".briosh" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".burza_supa" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".galet_iabulki" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".file_siomga" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".qbolkov_keks" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".zdravoslovni_bonboni" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".proteinov_sladkish" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".proletna_salata" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".lefer_furna" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".pechen_hek" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".zapekanka" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".pecheni_topki" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".rizoto_shafran" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".panna_cotta" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".klasik_tiramisu" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".lazanq_gotovikori" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".keks_rikota" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".salata_rukola" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".torta_kinder" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".iaponska_torta"  android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".iaponski_buhtichki"  android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".qponski_sladki"  android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".shokoladovo_sushi"  android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".chizkeik_asia" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".pile_zelenchuci"  android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".zeleva_salata"  android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".skaridi_purjenoriz"  android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".svinsko_kartofi" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".meso_french" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".salata_bekon" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".pateshki_butcheta" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".sorbe_gorskiplodove" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingSolenaTorta" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingKashaOtProso" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingZamrazenYogurth" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingZapekanka" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingPechenHek" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingLefer" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingProeltnaSalata" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingFileSiomga" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingBogatOmlet" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingZdravoslovniBonboni" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingQbolkovKeks" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingBarchetaMnogozurnesti" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".CookingZdravoslovenSladkish" android:label="@string/healthy_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.HealthyActivity" /></activity>
+        <activity android:name=".SalataRukola" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingPecheniTopki" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingNepolitanskaSupa" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingBurziBrusketi" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingNepolitanskiKrostini" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingLasagne" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingRizotoShafran" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingRavioliKartofi" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingQicaFlorenski" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingZapechenoPile" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingKeksRikota" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingKlasikTiramisu" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingPannaCotta" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingKantuchiniToskana" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingTortaKinder" android:label="@string/italian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.ItalianActivity" />
+        </activity>
+        <activity android:name=".CookingZelevaSalata" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingSupasAromatnaIztok" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingAziatskoZele" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingNudulSupa" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingSoupTikva" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingPileZelenchuci" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingSkaridiOriz" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingAvtentichnoPile" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingAsianDiuner" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingTeriakiShishcheta" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingChizkeikAsia" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingQponskiSladki" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingShokoladovoSushi" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingIaponskaTorta" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingIaponskiBuhti" android:label="@string/asian_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.AsianActivity" />
+        </activity>
+        <activity android:name=".CookingSalataBekon" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingKamember" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingBurzaSupa" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingPateshkiButcheta" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingMesoFrench" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingRatatui" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingSvinskoKartofi" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingSorbeGorskiPlodove" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingGaletIabulki" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingBriosh" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingFrenskiMakaroni" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingLekoBriule" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+        <activity android:name=".CookingProteinovSladkish" android:label="@string/french_cooking_string">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.something.android.cookingforteens.FrenchActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingGaletIabulki">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/background_recepta">
+            <!-- Checkbox за отмятане на стъпките -->
+            <CheckBox
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Загрейте фурната на 210 градуса"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разточете бутертестото във форма на кръг с диаметър 25 см"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Загрейте сладкото и прецедете през сито"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Намажете с помощта на четка бутертестото с кайсиево сладко (като се оставя непокрита ивица тесто 1,5 см от ръба навътре)"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Почистете ябълките и ги нарежете на тънки резени, които наредете кръгообразно върху намазаната част от тестото"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Прегънете навътре ненамазаната ивица тесто"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поръсете ябълките със захар"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поставете галета с ябълки свърху тава, която е застлана с хартия за печене"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Печете 25-30 минути"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Охладете галета с ябълки 5-10 минути, нарежете на парчета и поднесете с топка ванилов сладолед"
+                android:padding="10dp"/>
+            <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+            <Button
+                android:id="@+id/checkButton2345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="checkQestion"
+                android:text="Готово"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

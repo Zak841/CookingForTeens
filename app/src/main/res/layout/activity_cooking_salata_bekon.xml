@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingSalataBekon">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/background_recepta">
+            <!-- Checkbox за отмятане на стъпките -->
+            <CheckBox
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Залейте картофите със студена вода"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добавете малко сол във водата и сложете да заврат"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Варете 15-18 минути ако са дребни или 25 минути ако са по-едри"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отцедете от водата и нарежете на едри парчета"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Залейте яйцата със студена вода и сложете на силен котлон"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Когато водата заври хубаво се засечете 4 минути за рохки яйца"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="След изтичане на времето сложете яйцата веднага под студена течаща вода за да се охладят бързо и да се спре термичната обработка"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Обелете ги и ги оставете настрана"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Докато картофите се варят пригответе крутоните и бекона"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="За крутоните в тиган нагрейте зехтина и в него пуснете смачканата скилидка чесън"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Запържете докато придобие светло кафяв цвят като внимавате да не изгори"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Извадете чесъна и в тигана изсипете кубчетата хляб"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Гответе 5-6 минути докато се зачервят от всички страни"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Извадете ги в чиния и ги оставете настрана"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Изсипете бекона в същия тиган и запечете като разбърквате периодично"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ако започне да изсъхва бързо, в тигана добавете 1-2 супени лъжици вода и продължете готвенето докато водата се изпари и беконът започне да се пържи отново"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Когато е готов оставете настрана"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="За дресинга в малък буркан с винтова капачка изсипете всички съставки"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Енергично разклатете буркана докато се получи емулсия"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="За салатата в голяма купа сложете марулята, полската салата, спанака и магданоза"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добавете картофите, бекона и крутоните"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Залейте салатата с част от дресинга и поръсете с прясно смлян черен пипер"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разбъркайте внимателно"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Опитайте и ако има нужда добавете още дресинг"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сервирайте веднага с по едно яйце на порция"
+                android:padding="10dp"/>
+            <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+            <Button
+                android:id="@+id/checkButton2345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="checkQestion"
+                android:text="Готово"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

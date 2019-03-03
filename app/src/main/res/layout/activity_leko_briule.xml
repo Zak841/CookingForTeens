@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".leko_briule">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/leko_briule"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/leko_briule"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ванилия - 1 шушулка \n
+    сметана - 300 мл нискомаслена\n
+    мляко - 60 мл\n
+    жълтъци - 3 големи\n
+    захар - 50 г фина кристална\n
+    кафява захар - 100 г светла"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Загряваме фурната на 150 градуса. Намасляваме 4 купички за печене от 180 мл.
+Разделяме шушулката ванилия по дължина. Изтъргваме с нож семената и ги изсипете в тенджера, в която сме смесили сметаната и млякото. Загряваме сместа на умерен огън до завиране. Отстраняваме го от огъня и го оставете за 1 час да престои, за да поеме ароматите. Разбиваме жълтъците и захарта в средно голяма купа с миксер на висока скорост, докато сместа стане светла и кремообразна, и я добавяме с разбъркване към сметаната и млякото.
+Прецеждаме сместа в кана през фина цедка и я разпределяме в купички. Поставяме купичките в дълбока тава и наливаме в нея вряла вода по средата на купичките.
+Печем крема Брюле 35-45 минути, или докато сместа се втвърди.
+Оставяме крема да изстине до стайна температура, около 1 час, и го слагаме в хладилник поне за 4 часа.
+Поръсваме всяка купичка с равномерен слой кафява захар. Запалваме готварска горелка и карамелизираме захарта, докато се разтопи и стане златистокафява."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

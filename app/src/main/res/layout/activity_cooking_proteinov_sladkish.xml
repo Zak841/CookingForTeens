@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingProteinovSladkish">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_recepta">
+        <!-- Checkbox за отмятане на стъпките -->
+        <CheckBox
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отделете жълтъците от белтъците"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смесете всички продукти в блендер без жълтъците, меда и орехите"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Блендирайте до хомогенна смес"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изсипете получената смес в тавичка"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разбийте жълтъците с меда и изсипете върху сместа"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Натрошете орехите върху сладкиша и поръсете отгоре с тях"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Печете протеиновия сладкиш на около 200°C на долен реотан, докато придобие приятна коричка отгоре"
+            android:padding="10dp"/>
+        <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+        <Button
+            android:id="@+id/checkButton2345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="checkQestion"
+            android:text="Готово"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

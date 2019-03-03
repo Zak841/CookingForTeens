@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingFileSiomga">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_recepta">
+        <!-- Checkbox за отмятане на стъпките -->
+        <CheckBox
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Втрийте във филето от сьомга пипера, солта и чесъна"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Накиснете за половин час в сока от лимона"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обръщайте филето през 10 минути"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сварете киноата в 2 ч.ч. вода за около 15 минути"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нарежете чушките на дребни кубчета и ги смесете добре с киноата"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нарежете спанака на лентички и разполовете чери доматите"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смесете всичко в голяма купа и отгоре сложете кубчета от сиренето"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сварете яйцето и нарежете на ситно"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Посипете върху салатата"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="За дресинга смесете първо горчицата, соевия сос и солта"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="добавете меда и бъркайте до получаването на хомогенна смес"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Налейте зехтин на тънка струя и не спирайте да бъркате"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Полейте салатата и поръсете с черен пипер"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Може да приготвите филето от сьомга на грил тиган или обикновен тиган"
+            android:padding="10dp"/>
+        <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+        <Button
+            android:id="@+id/checkButton2345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="checkQestion"
+            android:text="Готово"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

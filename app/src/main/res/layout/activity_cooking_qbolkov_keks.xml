@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingQbolkovKeks">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_recepta">
+        <!-- Checkbox за отмятане на стъпките -->
+        <CheckBox
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обелете ябълките, почистете ги и ги нарежете на тънки резенчета"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разбийте яйцата с кафявата захар"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смесете содата с киселото мляко и го добавете при яйчената смес"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Прибавете олиото, ванилията, канелата и разбъркайте хубаво"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавете брашното и отново разбъркайте до хомогенна смес"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавете орехите и разбъркайте"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Намажете тава с малко олио и поръсете с малко брашно"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сипете в тавата половината смес за кекса"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подредете отгоре ябълкови резенчета и залейте с останалата смес"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изпечете в предварително загрята фурна на 180 градуса за около 40 мин"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Извадете и оставете леко да се охлади"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Поръсете с пудра захар"
+            android:padding="10dp"/>
+        <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+        <Button
+            android:id="@+id/checkButton2345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="checkQestion"
+            android:text="Готово"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

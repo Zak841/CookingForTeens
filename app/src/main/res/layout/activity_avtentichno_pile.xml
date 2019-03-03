@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".avtentichno_pile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/avtentichno_pilevkiselsos"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pilevsladkokislesos"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="За соса: \n
+6 с.л. оцет\n
+6 с.л. кетчуп\n
+2 ч.л. захар\n
+За пилето:\n
+500-600 г пилешки гърди\n
+1/2 ч.л. сол\n
+1/4 ч.л. чесън на прах\n
+1/6 ч.л. бял пипер\n
+45 мл студена вода\n
+За панировката:\n
+1 бр. яйце\n
+1/4 ч.л. сол\n
+1/6 ч.л. чесън на прах\n
+10 г бакплувер\n
+65 г царевично натурално нишесте\n
+105 г брашно\n
+2 с л. олио\n
+147 мл студена вода\n
+олио за пържене, маслена баня\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нарежете пилето на хапки 2.5 см. В купа направете марината и сложете месото вътре, разбъркайте хубаво и оставете да почива 20 минути.
+Продуктите за панировката прибавете в реда както са дадени в рецептата, разбъркайте до хомогенна смес. Изсипете сместа върху пилешкото месо в купата и хубаво разбъркайте за да се разнесе равномерно по хапките.
+
+В по-дълбок съд налейте около 4 пръста олио, изчакайте силно да се нагорещи и с помощта на дървено шишче поставете хапка по хапка да се пържат (не слагайте по много защото се залепят една за друга). Извадете когато видите, че са започнали да стават бледо жълти. Когато изпържите всичките късчета ги върнете вече всички да се изпържат заедно до златисто кафяво.
+
+Направете сладко киселия сос, като в съд на умерен котлон изсипете оцета да се изпари до половината, след това добавете захарта и разбъркайте за да се разтопи, след това прибавете кетчупа и сол, върнете хапките в тигана при соса, разбъркайте и махнете от огъня."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

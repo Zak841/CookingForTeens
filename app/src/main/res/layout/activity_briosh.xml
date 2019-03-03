@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".briosh">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/briosh"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/briosh"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="500 г брашно \n
+5 с. л. захар\n
+4 с. л. топлo прясно мляко или вода\n
+30 г прясна мая\n
+или 10 г суха мая\n
+250 г краве масло\n
+5 яйца\n
+1 ч. л. ванилия\n
+щипка сол\n
+1 жълтък\n
+2 с. л. вода\n
+"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Разтворете маята в топло мляко и прибавете 100 г брашно. \n
+• Разбъркайте закваската добре и я покрийте\n
+• Оставете я за 30-40 минути на топло място.\n
+• След това прибавете пресятото брашно, мекото масло, захарта и леко разбитите яйца.\n
+• Месете десетина минути или повече, докато тестото не се изглади и стане еластично.\n
+• Прехвърлете го в намаслен съд с масло и покрийте с намаслен найлон.\n
+• Оставете на топло да втаса за 1 час или докато не увеличи обема си двойно.\n
+• Разделете втасалото тесто на количество формички (или за една голяма форма), като 1/4 от тестото се оставя встрани. \n
+• От тестото оформете топки колкото яйце и поставете в намаслени форми (тестото трябва да напълни формата на 2/3. \n
+• Във всяка топка направете дупчици в средата.\n
+• От 1/4 тесто оформете топчици колкото лешник и заострете леко от едната страна.\n
+• Боднете се в дупчиците.\n
+• Покрийте ги и оставете на топло за 20 минути.\n
+• Намажете ги с разбития жълтък с вода и покрийте с едра захар.\n
+• Изпечете в предварително загрята фурна на 190 С за 10-13 минути.\n
+• След което увеличете температурата до 210-220 С и печете още 5 минути.\n
+"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

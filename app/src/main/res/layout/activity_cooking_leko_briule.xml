@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingLekoBriule">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/background_recepta">
+            <!-- Checkbox за отмятане на стъпките -->
+            <CheckBox
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Загрейте фурната на 150 градуса"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Намаслете 4 купички за печене от 180 мл."
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разделете шушулката ванилия по дължина"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Изтръгнете с нож семената и ги изсипете в тенджера, в която сте смесили сметаната и млякото"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Загрейте сместа на умерен огън до завиране"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отстранете го от огъня и го оставете за 1 час да престои, за да поеме ароматите"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разбийте жълтъците и захарта в средно голяма купа с миксер на висока скорост, докато сместа стане светла и кремообразна и я добавете с разбъркване към сметаната и млякото"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Прецедете сместа в кана през фина цедка и я разпределете в купички"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поставете купичките в дълбока тава и налейте в нея вряла вода до средата на купичките"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Печете 35-45 мин или докато сместа се втвърди"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оставете крема да изстине до стайна температура (около 1 час) и го сложете в хладилник поне за 4 часа"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поръсете всяка купичка с равномерен слой кафява захар"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Запалете готварска горелка и карамелизирайте захарта, докато се разтопи и стане златисто-кафява"
+                android:padding="10dp"/>
+            <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+            <Button
+                android:id="@+id/checkButton2345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="checkQestion"
+                android:text="Готово"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aziatska_nudul_supa">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/azistaski_nudul"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/asiatskanudelsupa"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 стръка пресен лук\n
+2 пуешки шницела \n
+2 с.л. горчица с къри \n
+1 жълта чушка \n
+1 морков \n
+1 малка тиквичкa \n
+3 с.л. сусамово олио \n
+1 ч.л. лимонов пипер \n
+1 с.л. къри \n
+600 мл пилешки бульон \n
+250 мл кокосово мляко \n
+100 гр азиатски нудъли \n
+пресен кориандър \n
+слънчогледово олио \n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Почистете пресния лук и го нарежете по дължина на две. Разстилете пуешките шницели, начукайте ги леко през прозрачно домакинско фолио и ги намажете с горчица, поръсете със сол и черен пипер. Навийте ги на рулца и стегнете с кухненски канап.
+Измийте зеленчуците, нарежете ги на тънки и къси лентички. Задушете ги в сусамовото олио, добавете кърито и лимоновия черен пипер, залейте с пилешкия бульон и кокосовото мляко.
+Върху супата поставете кошничка за варене на пара и в нея сложете пуешките ролца и задушете около 8 мин. Отстранете кошничката и добавете азиатските нудъли в супата, както и рулцата, като преди това ги срежете на по-малки половинки.
+Сварете до готовност нудълите и сервирайте супата с пресен кориандър. Добавете още сол и пипер на вкус."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

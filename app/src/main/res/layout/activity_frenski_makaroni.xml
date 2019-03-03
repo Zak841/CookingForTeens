@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frenski_makaroni">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/frenski_makaroni"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frenski_makaroni"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-35 г. яйчен белтък \n
+-45 г. пудра захар \n
+-40 г. бадемово брашно\n
+-40 г. обикновена захар\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сложете белтъците в купа и разбийте, докато сместа стане на балончета.
+Добавете половината от пудрата захар. Разбийте. Добавете останалата пудра захар и разбийте отново. Сместа трябва да стане мека и пухкава.
+Сложете боята (цветът е по желание) и разбийте, докато цялата смес се оцвети равномерно.
+Смесете бадемовото брашно и обикновената захар. Добавете ги към сместа и разбъркайте с шпатула. Проверявайте периодично дали сместа е добре разбъркана, като вадите шпатулата от нея. Ако се стича трудно, продължете да бъркате, ако пък е лесно – значи е готово.
+Вземете шприц или пош с голям и гладък отвор. Напълнете го със сместа, след което шприцовайте малки кръгчета върху тава, покрита с хартия печене.
+Ударете няколко пъти тавичката в плота, за да могат макароните да се освободят от балончетатаси и да поемат правилна форма.Времето за печене зависи от фурната, но на 150 С за около 15 минути би било достатъчно.
+Ако при отлепването на макароните имате проблеми, навлажнете малко хартията за печене отдолу и изчакайте – от парата ще се отлепят.
+Направете крем по избор и слепете две по две. Сложете в кутия, която се затваря плътно и оставете в хладилника поне за една нощ. Така вкусовете на целувките и крема ще се смесят и ще бъдат по-апетитни.
+Сега вече вашите френски макарони са готови!"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

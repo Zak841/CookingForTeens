@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qbolkov_keks">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/zdravosloven_keks"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zdravosloven_qbolkov_keks"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="яйца - 3 бр.
+олио - 3 с.л.
+захар - 220 г кафява
+мляко - 200 г кисело
+сода бикарбонат - 1/2 ч.л.
+брашно - 280 г от лимец
+бакпулвер - 1/2 пакетче
+ванилия - 1 бр.
+орехи - 150 гр. смлени
+канела - 2 ч.л.
+ябълки - 4 - 5 бр. малки
+пудра захар - 3 с.л."
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Обелете ябълките, почистете ги и ги нарежете на тънки резенчета. С кафявата захар разбийте яйцата. Смесете содата с киселото мляко и го добавете при яйчената смес.
+Прибавете олиото, ванилията, канелата и разбъркайте хубаво. Добавете брашното и отново разбъркайте до хомогенна смес. Добавете орехите и разбъркайте.
+Намажете тава с малко олио и поръсете с малко брашно. Сипете в тавата половината смес за кекса. Подредете отгоре ябълкови резенчета и залейте с останалата смес.
+Може отгоре да подредите още ябълкови резенчета. Изпечете в предварително загрята фурна на 180 градуса за около 40 мин. Извадете и оставете леко да се охлади. Поръсете с пудра захар."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

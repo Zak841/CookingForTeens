@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".file_siomga">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/file_siomga"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filesiomga"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="филе от сьомга - 2 \n
+чесън - 2 скилидки\n
+сол\n
+черен пипер\n
+лимони - 1\n
+За салатата\n
+спанак - 2 шепи\n
+киноа - 1/2 ч.ч.\n
+червени чушки - 2\n
+сирене - 100 г\n
+чери домати - 5 - 6 бр.\n
+яйца - 1\n
+Дресинг\n
+соев сос - 1 с.л.\n
+дижонсла горчица - 1 ч.л.\n
+мед - 1 с.л.\n
+балсамов оцет\n
+зехтин\n
+сол\n
+черен пипер\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Втрийте във филето от сьомга пипера, солта и чесъна и накиснете за половин час в сока от лимона. Обръщайте филето през 10 минути.
+През това време направете салатата.
+Сварете киноата в 2 ч.ч. вода за около 15 минути. Нарежете чушките на дребни кубчета и ги смесете добре с киноата. Нарежете спанака на лентички и разполовете чери доматите. Смесете всичко в голяма купа и отгоре сложете кубчета от сиренето. Сварете яйцето и нарежете на ситно. Посипете върху салатата.
+За дресинга смесете първо горчицата, соевия сос и солта. След това добавете меда и бъркайте до получаването на хомогенна смес. Налейте зехтин на тънка струя и не спирайте да бъркате. Полейте салатата и поръсете с черен пипер.
+Може да приготвите филето от сьомга на грил тиган или обикновен тиган, но не слагайте никаква мазнина, тъй като самата риба изпуска достатъчно. "
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kantuchini_toskana">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/kantuchini_ottoskana"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kantuchiniottoskana"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="брашно - 2 ч.ч. бяло\n
+бакпулвер - 1.5 ч.л.\n
+яйца - 3 бр.\n
+ванилова есенция - 2 ч.л.\n
+захар - 3/4 ч.ч.\n
+канела - 1/2 ч.л.\n
+бадеми - 1.5 ч.ч. обелени (цели)\n
+мазнина - за хартията за печене\n
+"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пресейте брашното заедно с бакпулвера, след това го смесете с канелата, бадемите и захарта.
+
+В отделна купа разбийте яйцата с ваниловата есенция и бавно ги прибавете към брашното, като бъркате непрекъснато до получаването на гладка смес.
+
+Върху посипана с брашно повърхност извадете полученото тесто омесете и гo разделете на 2 части.
+
+Оформете ги на ленти, които са дебели не повече от 1 см и ги сложете върху намаслена хартия за печене. Печете кантучините в предварително загрята на около 170-180 градуса фурна до готовност.
+
+Извадете тавата и оставете лентите да се охладят. След това ги нарежете диагонално с остър нож на бисквити и ги върнете във фурната да се доопекат (като в средата на печенето ги обърнете).
+
+Извадете готовите кантучини и оставете да се охладят. Съхранявайте ги в плътно затворена кутия."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

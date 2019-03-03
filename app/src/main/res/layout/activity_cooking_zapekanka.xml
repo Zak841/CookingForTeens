@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingZapekanka">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_recepta">
+        <!-- Checkbox за отмятане на стъпките -->
+        <CheckBox
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сварете пилешко бутче в подсолена вода"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Когато е готово, го почистете от кожата и костите и го нарежете на малки парченца"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пресипете 2 1/2 ч.ч. от водата, в която се е сварило бутчето, и в тази вода сварете киноата заедно с нарязания на ситно чесън"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Когато заври водата, добавете маслото и разбъркайте от време на време"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Покрийте с капак и намалете температурата"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="След като киноата е готова, я свалете от огъня и я оставете настрана, покрита с капак"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В друга тенджера задушете за кратко гъбите, морковите, чушките и броколите"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сварете картофите и ги нарежете на кубчета"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В по-дълбока тава, намазана с олио, сложете всичко приготвено досега"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В по-дълбока тава, намазана с олио, сложете всичко приготвено досега"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавете зеления лук, нарязан на ситно, както и сиренето и маслините"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разбъркайте добре, за да са разпределени равномерно всички съставки"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сложете подправките"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разбийте млякото с яйцето и горчицата и изсипете равномерно върху цялата тава"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сложете  в предварително загрята фурна на 180 градуса"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 минути преди да е готова запеканката, изсипете равномерно настъргания кашкавал и печете, докато стане златист"
+            android:padding="10dp"/>
+        <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+        <Button
+            android:id="@+id/checkButton2345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="checkQestion"
+            android:text="Готово"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

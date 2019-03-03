@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ratatui">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/ratatui"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratatui"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 домата \n
+3 глави кромид\n
+по 1 червена и жълта чушка\n
+2 патладжана\n
+2 тиквички\n
+сол на вкус\n
+1 лимон\n
+2 с. л. зехтин\n
+1 скилидка чесън\n
+1 с. л. масло\n
+млян черен пипер на вкус\n
+няколко листа босилек\n
+1 ч. л. провансалски билки - розмарин, мащерка, градински чай, джоджен, риган, чубрица"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пуснете доматите за кратко във вряща вода, извадете ги и ги обелете. Нарежете кромида и чушките на кубчета, а необелените патладжани и тиквичките - на кръгчета.
+Поръсете нарязаните зеленчуци със сол и лимонов сок и ги оставете в гевгир за около 20 минути, за да се отцеди горчивият сок.
+Запържете нарязания на ситно чесън за кратко в зехтина, след което добавете и останалите зеленчуци. Запържете ги за около една минута и ги извадете от съда.
+Варете нарязаните на ситно домати самостоятелно, докато им изври водата. Върнете в съда леко запържените зеленчуци и доматите, добавете маслото и подправките и варете до пълна готовност на всички зеленчуци. Сервирайте ястието топло, украсено със стрък мащерка и поръсено по желание с настъргано меко сирене."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

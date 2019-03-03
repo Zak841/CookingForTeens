@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingRavioliKartofi">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_recepta">
+        <!-- Checkbox за отмятане на стъпките -->
+        <CheckBox
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Замесете меко и еластично тесто от изброените продукти за тестото"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оставете го 20 минути да почине"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сварете картофите и ги намачкайте"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нарежете бекона и го изпържете в тиган"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавете ситно нарязаните чесън и лук и пържете още няколко минути"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавете картофите и настърганото сирене и овкусете със сол и подправките, разбъркайте добре"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разточете готовото тесто на тънка кора и изрежете кръгчета с диаметър около 8см"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Покрийте половината от всяко кръгче с плънка, а тестото около нея с малко белтък"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Завийте с другата половина и притиснете добре краищата с вилица"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пуснете равиолите във вряща вода, за да се сварят до готовност (около 7 минути)"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/answer11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Извадете ги с решетъчна лъжица, намажете с малко и поръсете с настърган кашкавал"
+            android:padding="10dp"/>
+        <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+        <Button
+            android:id="@+id/checkButton2345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="checkQestion"
+            android:text="Готово"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

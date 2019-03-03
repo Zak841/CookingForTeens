@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".salata_bekon">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/salata_bekon_qica"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zeleni_salati"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="За салатата: \n
+5-6 листа маруля, накъсани\n
+1 голяма шепа полска салата\n
+1 голяма шепа бейби спанак\n
+1/2 връзка магданоз, нарязан на ситно\n
+4 средно големи пресни картофа или 8 броя по-дребни (370 г)\n
+130 г бекон, нарязан на парчета дълги 3 см и широки 1 см\n
+4 яйца\n
+прясно смлян черен пипер\n
+За крутоните:\n
+3 супени лъжици зехтин\n
+1 голяма скилидка чесън, смачкана\n
+150 г хляб, нарязан на по-едри кубчета\n
+За дресинга:\n
+4 чаени лъжици червен винен оцет\n
+1 1/2 чаена лъжица дижонска горчица\n
+5 супени лъжици зехтин\n
+1 супена лъжица вода\n
+1 голяма скилидка чесън, пресована\n
+1/2 чаена лъжица малдонска сол или 1/4 чаена лъжица смляна морска сол\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Залейте картофите със студена вода, добавете малко сол във водата и сложете да заврат. Варете 15-18 минути ако са дребни или 25 минути ако са по-едри. Отцедете от водата и нарежете на едри парчета. Залейте яйцата със студена вода и сложете на силен котлон. Когато водата заври хубаво се засечете 4 минути за рохки яйца. Ако предпочитате по-стегнат жълтък, но с все още леко течен център, варете яйцата 5 минути. След изтичане на времето сложете яйцата веднага под студена течаща вода за да се охладят бързо и да се спре термичната обработка. Обелете ги и ги оставете настрана. Докато картофите се варят пригответе крутоните и бекона. За крутоните в тиган нагрейте зехтина и в него пуснете смачканата скилидка чесън. Запържете докато придобие светло кафяв цвят като внимавате да не изгори. Извадете чесъна и в тигана изсипете кубчетата хляб. Гответе 5-6 минути докато се зачервят от всички страни. Извадете ги в чиния и ги оставете настрана. Изсипете бекона в същия тиган и запечете като разбърквате периодично. Ако започне да изсъхва бързо, в тигана добавете 1-2 супени лъжици вода и продължете готвенето докато водата се изпари и беконът започне да се пържи отново. Когато е готов оставете настрана. За дресинга в малък буркан с винтова капачка изсипете всички съставки. Енергично разклатете буркана докато се получи емулсия. За салатата в голяма купа сложете марулята, полската салата, спанака и магданоза. Добавете картофите, бекона и крутоните. Залейте салатата с част от дресинга и поръсете с прясно смлян черен пипер. Разбъркайте внимателно. Опитайте и ако има нужда добавете още дресинг. Сервирайте веднага с по едно яйце на порция."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

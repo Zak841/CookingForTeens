@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Това е моя layout файл, който използвам за моя ListView(кръстил съм го listViewRecipes)
+    във всички Fragment-и -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text_container"
+        android:orientation="vertical">
+        <!-- Заглавието на рецептата -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#000000"/>
+        <!-- Снимка на рецептата -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

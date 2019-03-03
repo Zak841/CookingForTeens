@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".solena_torta">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/solena_torta"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/solena_torta_kafiol_parmezan1"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="карфиол - 450 г (1/2 глава)\n
+яйца - 3 бр. XL\n
+бекон - 100 г\n
+царевично нишесте - 4 с.л. с връх\n
+заквасена сметана - 100 г\n
+пармезан - 4 с.л. на прах + за поръсване на тортата\n
+ементал - 60 г\n
+сол - 3 щипки\n
+черен пипер - 1 щипка, прясно смлян\n
+зехтин - 1 с.л.\n
+орехи - около 50 г\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Измийте карфиола и го разчленете на отделни розички. Поставете го в купата на блендер и включете да се смели на средна скорост за няколко секунди - целта е да стане на трохи, не много ситни и в никакъв случай да не стане на каша. Добавете към него 2 щипки сол и разбъркайте.
+
+Разбийте яйцата със друга щипка сол и добавете заквасената сметана, нишестето, черния пипер, зехтина, 4 с.л. с връх пармезан на прах и Ементала (настърган). Вместо Ементал може да ползвате и обикновен кашкавал, не много солен.
+
+С хартия за печене покрийте кръгла тавичка. Разпределете карфиола равномерно и върху него разпръснете бекона, нарязан на кубчета или лентички. Полейте течната смес, така че хубаво да се поеме от карфиола.
+
+Подредете ореховите ядки (на половинки) и пъхнете в загрята на 175 градуса фурна за 30-40 минути или до хубав златист загар.
+
+Когато извадите солената торта от фурната, поръсете с още фино настърган пармезан."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

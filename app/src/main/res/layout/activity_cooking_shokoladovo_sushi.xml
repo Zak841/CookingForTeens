@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingShokoladovoSushi">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/background_recepta">
+            <!-- Checkbox за отмятане на стъпките -->
+            <CheckBox
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Измийте ориза под студена вода"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поставете го в тенджера заедно с кокосовото мляко и водата"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оставете да заври на умерена температура, след което намалете температурата на котлона"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оставете да къкри за 15 мин при периодично разбъркване"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Свалете го от огъня и добавете захарта, ванилията и оцета, разбърквайте"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Охладете напълно"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нарежете плодовете на пръчици и залейте с ликьора"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оставете да се мариноват"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Върху хартия за печене разчертаайте 4 правоъгълника с размер 30/9 см и четири правоъгълника с размер 30/11 см"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разтилете охладения ориз върху по-малките правоъгълници около 0.5 см"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В долната му част направете улей, там поставете нарязаните плодове"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="С помощта на хартията завийте на стегнато руло и оставете в хладилник"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Стопете шоколада на водна баня с глюкозата"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Охладете до стайна температура"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Намажете върху по-големите правоъгълници на по-плътен слой"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Изчакайте да се стегне на стайна температура и да бъде еластичен"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Върху него поставете рулата от ориз и ги завийте, така че целите да са обгърнати с шоколад"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Завийте ги в хартията и ги оставете в хладилник, за да стегнат"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/answer19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нарежете шоколадовото суши с топъл нож"
+                android:padding="10dp"/>
+            <!-- Бутон, който проверява дали стъпките са изпълнени.-->
+            <Button
+                android:id="@+id/checkButton2345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="checkQestion"
+                android:text="Готово"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

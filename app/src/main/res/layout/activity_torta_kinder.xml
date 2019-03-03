@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".torta_kinder">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/torta_kinderpinguin"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/torta_kinder"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="за блата \n
+какао - 25 г\n
+вода - 90 мл вряла\n
+яйца - 3 бр.\n
+захар - 130 г\n
+олио - 60 мл\n
+брашно - 140 г\n
+бакпулвер - 1/2 пакетче\n
+за крема\n
+желатин - 3 листа около 6 г\n
+течна сметана - 2 с.л.\n
+маскарпоне - 500 г\n
+пудра захар - 80 г\n
+ванилия - 1 ампула\n
+сметана - 250 мл за разбиване\n
+за шоколадовия диск\n
+тъмен шоколад - 80 г\n
+за глазурата\n
+тъмен шоколад - 150 г\n
+течна сметана - 150 мл\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Смесете какаото с врялата вода, разбъркайте и оставете да се охлади.
+Отделете белтъците и ги разбийте на сняг. Постепенно добавете половината захар - 65 г, и бийте до твърди връхчета.
+В отделна купа разбийте жълтъците с останалата захар, добавете олиото, пресятото с бакпулвера брашно и какаото. Разбъркайте всичко добре.
+Към тази смес на няколко пъти добавете разбитите белтъци, като разбърквате внимателно с шпатула.
+Изсипете сместа във форма за торта с диаметър 24 см, застлана с хартия, и печете в предварително загрята на 180 градуса фурна до готовност - около 20 минути. Оставете да се охлади.
+За шоколадовия диск разтопете шоколада на водна баня. Върху хартия за печене очертайте кръг с диаметър 24 см и разстлейте шоколада. Сложете в хладилника да стегне.
+Накиснете листата желатин в студена вода за 10 минути. Загрейте 2 с.л. сметана, добавете желатина и разбъркайте. Оставете малко да изстине. За крема разбийте маскарпонето с пудрата захар и ванилията. Отделно разбийте сметаната на пухкав крем, смесете с маскарпонето и при непрекъснато бъркане прибавете желатина.
+Разрежете блата на две и върху едната част разпределете половината от крема. Върху него сложете шоколадовия диск, останалия крем и втората част от блата.
+За глазурата на тортата загрейте сметаната, прибавете шоколада и разбъркайте, докато се разтопи. Залейте тортата и оставете за поне 4 часа."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

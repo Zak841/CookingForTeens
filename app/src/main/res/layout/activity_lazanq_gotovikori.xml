@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lazanq_gotovikori">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/lazanq_gotovi_kori"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lazaniq"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="кори за лазаня - 1 кутия
+За сос болонезе
+лук - 1 глава малка
+чесън - 2 скилидки
+моркови - 1 бр.
+кайма - 500 г телешка
+домати - 300 мл смлени
+червено вино - 100 мл.
+босилек - 1 с.л. сух
+риган - 1 ч.л.сух
+черен пипер - 1 /2 к.л.
+За сос бешамел
+масло - 1 с.л.
+брашно - 3 с.л.
+прясно мляко - 400 мл
+iндийско орехче - 1 щипка
+сол
+моцарела - 150 г настъргана
+кашкавал - 200 г твърд"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Първо пригответе сосовете. За сос Болонезе нарежете на дребно моркова, чесъна и лука, след което ги задушете.
+След като омекнат зеленчуците, прибавете каймата. Бъркайте, докато каймата стане на трохи. Прибавете виното, а след като се поизпари сложете доматите, босилека, ригана и черния пипер.
+Бешамел се приготвя, като запържите брашното до златисто. На струйка и с непрекъснато бъркане налейте прясното мляко. След като сосът се сгъсти, овкусете със сол и индийско орехче.
+Корите за лазаня се попарват. На дъното на тава сложете малко бешамел, ред кори, сос бешамел, сос болонезе, моцарела, кашкавал. След това наредете отново кори, сосове и така до изчерпване на продуктите.
+На последния ред само не се слага от червения сос. Печете лазанята във фурна на 200 градуса за около 30 минути."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

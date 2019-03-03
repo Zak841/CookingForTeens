@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".zapekanka">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/zapekanka_kinoa"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zapekanka"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="киноа - 1 ч.ч. \n
+броколи - 1 глава\n
+пилешко месо - 1 бутче\n
+гъби - 250 г\n
+масло - 50 г\n
+картофи - 3 бр.\n
+моркови - 2 бр.\n
+чушки - 2 бр.\n
+маслини - 150 г\n
+яйца - 1 бр.\n
+прясно мляко - 150 г\n
+кашкавал - 100 г\n
+сирене - 100 г\n
+зелен лук - 2 стръка\n
+горчица - 2 с.л.\n
+чесън - 2 скилидки\n
+черен пипер\n
+червен пипер\n
+сол"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сварете пилешко бутче в подсолена вода. Когато е готово, го почистете от кожата и костите и го нарежете на малки парченца.
+Пресипете 2 1/2 ч.ч. от водата, в която се е сварило бутчето, и в тази вода сварете киноата заедно с нарязания на ситно чесън. Когато заври водата, добавете маслото и разбъркайте от време на време. Покрийте с капак и намалете температурата, за да попие киноата по-добре водата.
+След като киноата е готова, я свалете от огъня и я оставете настрана, покрита с капак. В друга тенджера задушете за кратко гъбите, морковите, чушките и броколите.
+Сварете картофите и ги нарежете на кубчета.
+В по-дълбока тава, намазана с олио, сложете всичко приготвено досега. Добавете зеления лук, нарязан на ситно, както и сиренето и маслините. Разбъркайте добре, за да са разпределени равномерно всички съставки. Сложете подправките.
+Разбийте млякото с яйцето и горчицата и изсипете равномерно върху цялата тава. Сложете  в предварително загрята фурна на 180 градуса. 5 минути преди да е готова запеканката, изсипете равномерно настъргания кашкавал и печете, докато стане златист."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

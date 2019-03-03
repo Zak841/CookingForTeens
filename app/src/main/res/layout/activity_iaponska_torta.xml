@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".iaponska_torta">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/iaponska_torta"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/aponska_torta"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ябълки - 400 г (1 голяма и 1 средна ябълка - Грени Смит) \n
+яйца - 2 бр.\n
+захар - 70 г\n
+прясно мляко - 100 мл стайна температура\n
+масло - 20 г разтопено\n
+брашно - 80 г бяло\n
+бакпулвер - 1/4 ч.л.\n
+бадеми - 3 шепи (сурови накълцани на дълго)\n
+канела - 1 щипка\n
+сол - 1 шипка\n
+ТОПИНГ\n
+захар - 70 г\n
+масло - 30 г\n
+сметана - 100 мл висок процент\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фурна - 165 градуса; Кейкова форма с хартия - 26/13 см
+Обелете ябълките и почистете от семките. Нарежете на филийки и потопете в купа с вода и лимонов сок. Оставете ги настрани.
+Разбийте яйцата и захарта до побеляване. Добавете разтопеното масло, млякото, солта, канелата и брашното с бакпулвера през цедка. Разбъркайте с шпатула. Изцедете ябълките от водата и добавете внимателно, за да не се счупят.
+Разбъркайте. С лъжица първо извадете ябълките и ги положете в кейковата форма, а отгоре залейте с останалата смес. Поръсете обилно с накълцаните бадеми.
+Печете на 165-170 градуса за около 40-45 минути или до суха клечка.
+Топинг:
+В касерола изсипете захарта и оставете да се стопи до светъл карамел на умерен огън, по скоро към слаб котлон.
+Прибавете маслото при непрекъснато разбъркване до пълното му стопяване. Изсипете сметаната и разбъркайте, като внимавате да не изкипи от горещата и висока температура. Охладете и залейте тортата."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

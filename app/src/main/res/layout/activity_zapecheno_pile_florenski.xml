@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".zapecheno_pile_florenski">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/zapecheno_pile_florenski"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zapecheno_pile_florenski"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 бр пилешки гърди без кост, нарязани на едри парчета \n
+¼ чаша масло\n
+3 чаени лъжички чесън, млян\n
+1 супена лъжица пресен лимонов сок\n
+150 г гъби, нарязани\n
+1 супена лъжица средиземноморска подправка (меланж)\n
+½ чаша настърган пармезан\n
+200 г спанак, сварен или от консерва\n
+1 кубче гъбен бульон\n
+2/3 чаша бекон, нарязан\n
+2 чаши настъргана моцарела\n"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Загрейте фурната на 200 градуса. Поставете пилешките гърди върху хартия за печене. Печете 20-30 минути, докато покафенее леко и соковете му започнат да изтичат.
+Извадете от фурната и оставете настрана. Увеличете температурата на 230 градуса. На котлона разтопете маслото в тиган и запържете чесъна, лимоновия сок, кубчето бульон, разтворено в чаша вода,
+подправката и пармезана. На дъното на тавичката за печене, която сте освободили от месото, разстелете спанака. Върху него подредете гъбите. След това върнете месото върху полученото канапе.
+Покрийте с приготвената смес. Поръсете с парченцата бекон и накрая моцарелата. Печете на 200 градуса за около 25-30 минути или до готовност"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

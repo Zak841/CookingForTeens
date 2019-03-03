@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".keks_rikota">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_recepta">
+            <!-- Заглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/keks_rikota"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <!-- Снимка -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/keks_rikota"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Необходими съставки:"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <!-- Съставките -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="краве масло - 190 г
+пудра захар - 220 г
+яйца - 2 бр.
+брашно - 120 г
+какао - 2 с.л.
+За бялата смес
+рикота - 250 г
+пудра захар - 50 г
+яйца - 1 бр.
+сладко от череши - от цели"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Подзаглавие -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начин на приготвяне"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <!-- Текста с обесние за приготвяне -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="В купа смесете и разбийте омекналото масло и пудрата захар. След като получите пухкава смес, едно по едно прибавете яйцата. Пресейте брашното и го сложете в купата заедно с какаото. Разбъркайте сместа хубаво до гладка консистенция.
+В друга купа сложете рикотата и пудрата захар. Разбъркайте с телена бъркалка, след което прибавете едно яйце и отново разбъркайте.
+Използвайте за изпичането на сладкиша продълговата форма за кекс, чието дъно и стени са покрити с хартия за печене.
+В подготвената форма за кекс изсипете половината от кафявата смес, а върху нея изсипете сместа с рикота. Сложете по няколко цели черeшки от сладко, след което отгоре върху сместа за кекса изсипете останалата половина от кафявата смес.
+С помощта на лъжица или шпатула объркайте двете смеси с плавни движения на няколко места.
+Печете кексът с рикота в предварително загрята на 180 градуса фурна за около 50 минути."
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СГОТВИ"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:layout_margin="20dp"
+                android:onClick="cookingovesenakasha"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
